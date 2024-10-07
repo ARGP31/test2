@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARGP Occitanie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="logo-container">
+        <img src="logo_argp.png" alt="Logo ARGP" id="logo">
+    </div>
+
+    <div class="overlay text-center">
+        <h1>ARGP Occitanie :</h1>
+        <div class="d-grid gap-3">
+            <button class="btn btn-lg btn-custom rounded"
+                onclick="window.open('presentation.html', '_blank')">Présentation de
+                l'agence</button>
+            <button class="btn btn-lg btn-custom rounded"
+                onclick="window.open('reglementations.html', '_blank')">Règlementations des
+                raccordements</button>
+            <button class="btn btn-lg btn-custom rounded" onclick="window.open('liens.html', '_blank')">Liens
+                utiles</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            const logoContainer = document.getElementById('logo-container');
+
+            setTimeout(function () {
+                logoContainer.classList.add('fade-out');
+            }, 400);
+
+            setTimeout(function () {
+                logoContainer.style.display = 'none';
+            }, 4500);
+        };
+    </script>
+</body>
+
+</html>
